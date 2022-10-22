@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MobileNum"
+    >
+
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="349dp"
+        android:background="@drawable/box1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center_horizontal"
+            android:text="Enter your"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center_horizontal"
+            android:text="mobile number"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneNumberLayout"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:hint="Your phone number"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="15dp"
+            android:id="@+id/getOpt"
+            android:fontFamily="@font/montserratbold"
+            android:text="Get OPT"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:onClick="gotoverifopt"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center_horizontal"
+            android:text="By creating an account, you accept our"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center_horizontal"
+            android:text="Terms and Conditions."
+            android:textColor="@color/OnGreen"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

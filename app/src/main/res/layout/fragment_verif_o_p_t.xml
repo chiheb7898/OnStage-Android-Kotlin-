@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MobileNum"
+    >
+
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="316dp"
+        android:background="@drawable/box1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center_horizontal"
+            android:text="We have sent an OTP"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center_horizontal"
+            android:text="Enter 5 digit OTP"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/codeLayout"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:hint="Your OPT code"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--<com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/OPTnum"
+            android:layout_width="255dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:alpha="0.4"
+            android:background="@drawable/shape2"
+            android:paddingLeft="10dp"
+            app:errorEnabled="true">
+        </com.google.android.material.textfield.TextInputEditText>-->
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:cornerRadius="15dp"
+            android:id="@+id/btnVerif"
+            android:onClick="verifOPT"
+
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
